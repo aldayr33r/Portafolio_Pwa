@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d1117">
+    <link rel="icon" href="icon/icon_16.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificados</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="text-center my-4">
+        <div class="profile-box py-4 px-3 border border-light rounded text-center">
+            <img src="img/profile.jpg" alt="Perfil" class="profile-image mb-3">
+            <h1>&lt;/&gt; ALDAYR RAMOS</h1>
+            <p class="mt-2">No soy un freaky, soy un desarrollador Full-Stack<br>Apasionado por el diseño web y la programación</p>
+            <button class="btn btn-primary mt-3" id="download-cv" onclick="downloadCertificate('ALEXANDRO_ALDAYR_RAMOS_CV.pdf')">Descargar cv</button>
+        </div>
+    </header>
+    <br><br>
+    <!-- Social Section -->
+    <section id="social" class="text-center my-4">
+        <h2>🔗 Social</h2>
+        <div class="social-links mt-3 d-flex justify-content-center gap-4">
+            <a href="https://github.com/aldayr33r" target="_blank" class="btn btn-dark d-flex align-items-center gap-2">
+                <img src="img/git.png" alt="React" class="badge-icon"> Github
+            </a>
+            <a href="www.linkedin.com/in/aldayr-ramos-301773293" target="_blank" class="btn btn-dark d-flex align-items-center gap-2">
+                <img src="img/linkedin.png" alt="React" class="badge-icon"> Linkedin
+            </a>
+            <a href="mailto:aldayrramos5@gmail.com" target="_blank" class="btn btn-dark d-flex align-items-center gap-2">
+                <img src="img/gmail.png" alt="React" class="badge-icon"> Gmail
+            </a>
+        </div>
+    </section>
+    <br><br>
+
+
+    <section id="projects" class="my-4 container">
+        <h2 class="text-center">⭐ Proyectos</h2>
+        
+        <!-- Proyecto 1 -->
+        <div class="project-card p-3 my-4 border rounded bg-dark text-white">
+            <h3 class="text-uppercase">Titan Gym</h3>
+            <p>Creada con React Native, Node JS y Mongo db. Acompaña tu dieta y entrenamientos de manera completa</p>
+            <div class="badges mb-2 d-flex align-items-center gap-2">
+                <span class="badge bg-info d-flex align-items-center gap-1">
+                    <img src="img/react.png" alt="React" class="badge-icon"> React Native
+                </span>
+                <span class="badge bg-success d-flex align-items-center gap-1">
+                    <img src="img/nodejs.png" alt="Node.js" class="badge-icon"> Node.js
+                </span>
+                <span class="badge bg-primary d-flex align-items-center gap-1">
+                    <img src="img/android.png" alt="Android" class="badge-icon"> Android
+                </span>
+            </div>
+            <button class="btn btn-primary view-project" onclick="window.open('https://github.com/aldayr33r', '_blank')">
+                <img src="img/git.png" alt="Ver" class="btn-icon"> Ver
+            </button>
+        </div>
+    
+        <!-- Proyecto 2 -->
+        <div class="project-card p-3 my-4 border rounded bg-dark text-white">
+            <h3 class="text-uppercase">ITickets</h3>
+            <p>Creada con EJS, Node JS y Mongo db. Sistema de reporte de incidencias para soporte técnico dirigido a la área de informática</p>
+            <div class="badges mb-2 d-flex align-items-center gap-2">
+                <span class="badge bg-info d-flex align-items-center gap-1">
+                    <img src="img/ejs.png" alt="EJS" class="badge-icon"> EJS
+                </span>
+                <span class="badge bg-success d-flex align-items-center gap-1">
+                    <img src="img/nodejs.png" alt="Node.js" class="badge-icon"> Node.js
+                </span>
+                <span class="badge bg-warning d-flex align-items-center gap-1">
+                    <img src="img/mongodb.png" alt="MongoDB" class="badge-icon"> Mongo DB
+                </span>
+            </div>
+            <button class="btn btn-primary view-project" onclick="window.open('https://github.com/aldayr33r', '_blank')">
+                <img src="img/git.png" alt="Ver" class="btn-icon"> Ver
+            </button>
+        </div>
+    
+        <!-- Proyecto 3 -->
+        <div class="project-card p-3 my-4 border rounded bg-dark text-white">
+            <h3 class="text-uppercase">Agro Monitor</h3>
+            <p>Creada con Dart, Flutter y Sqlite. Sistema de monitoreo de ganado de manera sencilla y completa</p>
+            <div class="badges mb-2 d-flex align-items-center gap-2">
+                <span class="badge bg-secondary d-flex align-items-center gap-1">
+                    <img src="img/dart.png" alt="Dart" class="badge-icon"> Dart
+                </span>
+                <span class="badge bg-info d-flex align-items-center gap-1">
+                    <img src="img/flutter.png" alt="Flutter" class="badge-icon"> Flutter
+                </span>
+                <span class="badge bg-warning d-flex align-items-center gap-1">
+                    <img src="img/sqlite.png" alt="Sqlite" class="badge-icon"> Sqlite
+                </span>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button class="btn btn-primary view-project" onclick="window.open('https://github.com/aldayr33r', '_blank')">
+                <img src="img/git.png" alt="Ver" class="btn-icon"> Ver
+            </button>
+        </div>
+        </div>
+    </section>
+
+<br>
+   <!-- Skills Section -->
+<section id="skills" class="my-5 text-center">
+    <h2>💻 Habilidades</h2>
+    <div class="skills-container mt-4 d-flex flex-wrap justify-content-center gap-3">
+        <!-- Habilidades -->
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/js.png" alt="JavaScript" class="badge-icon me-2"> JavaScript
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/react.png" alt="React Native" class="badge-icon me-2"> React Native
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/mongodb.png" alt="MongoDB" class="badge-icon me-2"> Mongo DB
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/dart.png" alt="Dart" class="badge-icon me-2"> Dart
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/flutter.png" alt="Flutter" class="badge-icon me-2"> Flutter
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/css.png" alt="CSS" class="badge-icon me-2"> CSS
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/html.png" alt="HTML" class="badge-icon me-2"> HTML
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/python.png" alt="Python" class="badge-icon me-2"> Python
+        </span>
+        <span class="badge bg-dark text-light d-flex align-items-center px-3 py-2">
+            <img src="img/c.png" alt="C++" class="badge-icon me-2"> C# / C++
+        </span>
+    </div>
+</section>
+    <!-- Mail Section -->
+    <section id="mail" class="my-5 text-center">
+        <h2>📧 Mail</h2>
+        <div class="mail-container mt-4 d-flex justify-content-center align-items-center gap-3">
+            <!-- Input para el correo -->
+            <input 
+                type="text" 
+                id="emailInput" 
+                class="form-control text-center text-light bg-dark border-0" 
+                value="aldayrramos5@gmail.com" 
+                readonly
+            >
+            <!-- Botón para copiar -->
+            <button id="copyButton" class="btn btn-primary d-flex align-items-center gap-2">
+                <img src="img/copiar.png" alt="Copiar" class="badge-icon"> Copiar
+            </button>
+        </div>
+    </section>
+
+    <section id="certificates" class="my-5 container">
+        <h2 class="text-center">📜 Certificados</h2>
+        <div class="certificates-container mt-4 d-flex flex-wrap justify-content-center">
+            <!-- Certificado 1 -->
+            <div class="certificate-card d-flex align-items-center justify-content-between p-3 my-2 border rounded bg-dark text-white">
+                <div class="d-flex align-items-center">
+                    <img src="img/santander.png" alt="Certificado 1" class="certificate-img me-3">
+                    <div>
+                        <h4 class="mb-1">Habilidades de negociación</h4>
+                        <p class="mb-0">Santander Open Academy</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary d-flex align-items-center justify-content-center gap-2" onclick="downloadCertificate('Certificado_Negociacion.pdf')">
+                    <img src="img/descargar.png" alt="Descargar" class="badge-icon">
+                </button>
+            </div>
+    
+            <!-- Certificado 2 -->
+            <div class="certificate-card d-flex align-items-center justify-content-between p-3 my-2 border rounded bg-dark text-white">
+                <div class="d-flex align-items-center">
+                    <img src="img/icp.png" alt="Certificado 2" class="certificate-img me-3">
+                    <div>
+                        <h4 class="mb-1">ICP Developer Azle</h4>
+                        <p class="mb-0">ICP HUB LATAM</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary d-flex align-items-center justify-content-center gap-2" onclick="downloadCertificate('Certificado_Azle.pdf')">
+                    <img src="img/descargar.png" alt="Descargar" class="badge-icon">
+                </button>
+            </div>
+    
+            <!-- Certificado 3 -->
+            <div class="certificate-card d-flex align-items-center justify-content-between p-3 my-2 border rounded bg-dark text-white">
+                <div class="d-flex align-items-center">
+                    <img src="img/icp.png" alt="Certificado 3" class="certificate-img me-3">
+                    <div>
+                        <h4 class="mb-1">ICP Developer Motoko</h4>
+                        <p class="mb-0">ICP HUB LATAM</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary d-flex align-items-center justify-content-center gap-2" onclick="downloadCertificate('Certificado_Motoko.pdf')">
+                    <img src="img/descargar.png" alt="Descargar" class="badge-icon">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/boostrap.js"></script>
+    <script src="js/script_fun.js"></script>
+    <script src="script.js"></script>
+    <script src="serviceworker.js"></script>
+</body>
+</html>
